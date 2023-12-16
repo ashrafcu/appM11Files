@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 class ProductController extends Controller
 {
     public function getProducts(){
-        $allProducts= DB::table('products')->get();
+        $allProducts= DB::table('products')->select('id', 'product_title', 'quantity')->get();
         return $allProducts;
         
     }
