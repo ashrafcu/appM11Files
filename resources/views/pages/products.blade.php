@@ -1,39 +1,7 @@
 @extends('layouts.master')
 @section('content')
 <div class="content-body">
-    <div class="container-fluid mt-3">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <div class="card">
-                    <div class="card-body px-0">
-                        <h4 class="card-title px-4 mb-3">All Tasks</h4>
-                        <div class="todo-list">
-                            <div class="tdl-holder">
-                                <div class="tdl-content">
-                                    <ul id="todo_list">
-                                        <li><label><input type="checkbox"><i></i><span>Get up</span><a href='#'
-                                                    class="ti-trash"></a></label></li>
-                                        <li><label><input type="checkbox" checked><i></i><span>Stand up</span><a
-                                                    href='#' class="ti-trash"></a></label></li>
-                                        <li><label><input type="checkbox"><i></i><span>Don't give up the fight.</span><a
-                                                    href='#' class="ti-trash"></a></label></li>
-                                        <li><label><input type="checkbox" checked><i></i><span>Do something
-                                                    else</span><a href='#' class="ti-trash"></a></label></li>
-                                    </ul>
-                                </div>
-                                <div class="px-4">
-                                    <input type="text" class="tdl-new form-control"
-                                        placeholder="Write new item and hit 'Enter'...">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-
+    <div class="container-fluid mt-3">   
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
@@ -43,10 +11,10 @@
                                 <table class="table table-xs mb-0">
                                     <thead>
                                         <tr>
-                                            <th>Customers</th>
-                                            <th>Product</th>
-                                            <th>Country</th>
-                                            <th>Status</th>
+                                            <th>Product ID</th>
+                                            <th>Product's Name</th>
+                                            <th>Quantity (In Stock)</th>
+                                            <th>Quantity (Sold)</th>
                                             <th>Payment Method</th>
                                             <th>Activity</th>
                                         </tr>

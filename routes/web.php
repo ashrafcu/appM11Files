@@ -18,9 +18,8 @@ use App\Http\Controllers\DashboardController;
 //==Dashboard Routes==//
 Route::group(['prefix'=>'admin'], function(){
     Route::get('/home', [DashboardController::class, 'showHome'])->name('home');
-    Route::get('/tasks', [DashboardController::class, 'showTaskList'])->name('task.list');
-    Route::get('/image', [ImageController::class, 'uploadImage'])->name('image.upload');
-    Route::post('/image', [ImageController::class, 'uploadSingleImage'])->name('image.upload');
+    Route::get('/products', [DashboardController::class, 'displayProducts'])->name('product.list');
+    Route::get('/transactions', [DashboardController::class, 'showTransactions'])->name('transaction.list');
 });
 
 

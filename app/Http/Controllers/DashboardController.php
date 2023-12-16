@@ -10,7 +10,11 @@ class DashboardController extends Controller
         return view('pages.home');
     }
 
-    public function showTaskList(){
-        return view('pages.alltasks');
+    public function displayProducts(){
+        return view('pages.products');
+    }
+
+    public function showTransactions(){
+        return view('pages.transactions');
     }
 }

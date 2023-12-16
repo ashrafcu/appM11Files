@@ -9,7 +9,7 @@
     {{-- theme meta --}}
     <meta name="theme-name" content="quixlab" />
   
-    <title>Nodi Thai Aluminium | Administration Panel </title>
+    <title>Stock and Sales Management | OSTAD POS </title>
     {{-- Favicon icon --}}
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/images')}}/favicon.png">
     {{-- Pignose Calender --}}
