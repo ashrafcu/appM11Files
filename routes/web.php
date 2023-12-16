@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ImageController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\DashboardController;
 
 /*
@@ -18,7 +18,7 @@ use App\Http\Controllers\DashboardController;
 //==Dashboard Routes==//
 Route::group(['prefix'=>'admin'], function(){
     Route::get('/home', [DashboardController::class, 'showHome'])->name('home');
-    Route::get('/products', [DashboardController::class, 'displayProducts'])->name('product.list');
+    Route::get('/products', [ProductController::class, 'showAllProducts'])->name('product.list');
     Route::get('/transactions', [DashboardController::class, 'showTransactions'])->name('transaction.list');
 });
 
