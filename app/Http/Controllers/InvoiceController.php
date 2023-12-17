@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\DB;
 
 class InvoiceController extends Controller
 {
+    public function addInvoices(){
+        return view('pages.add-invoices');
+    }
     public function getInvoices(){
         $allTransactions= DB::table('invoices')->join('users','invoices.client_id','=','users.id')->get();
         return $allTransactions;
@@ -18,8 +21,5 @@ class InvoiceController extends Controller
         return $totalTransactionAmount;
         
     }
-    public function showAllTransactions(){
-        return view('pages.transactions');
-        
-    }
+    
 }

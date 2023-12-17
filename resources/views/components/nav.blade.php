@@ -17,8 +17,8 @@
                     <i class="icon-grid menu-icon"></i><span class="nav-text">Products</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="./layout-blank.html">Add Products</a></li>
-                    <li><a href="./layout-one-column.html">Edit Product Stock</a></li>
+                    <li><a href="{{route('add-products.form')}}">Add Products</a></li>
+                    <li><a href="{{route('add-products.form')}}">Edit Product Stock</a></li>
                 </ul>
             </li>
             
@@ -27,7 +27,7 @@
                     <i class="icon-grid menu-icon"></i> <span class="nav-text">Sales</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="./email-read.html">Invoice</a></li>
+                    <li><a href="{{route('add-invoices.form')}}">New Invoice</a></li>
                 </ul>
             </li>
         </ul>

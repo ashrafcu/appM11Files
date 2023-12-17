@@ -15,5 +15,13 @@ class DashboardController extends Controller
         return view('pages.home');
     }
 
-    
+    public function showAllTransactions(){
+        return view('pages.transactions');
+        
+    }
+
+    public function showAllProducts(){
+        return view('pages.products');
+        
+    }
 }
