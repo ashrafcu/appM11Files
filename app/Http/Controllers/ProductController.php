@@ -30,9 +30,9 @@ class ProductController extends Controller
         
     }
     
-    public function getProducts(){
-        $allProducts= DB::table('products')->select('id', 'product_title', 'quantity')->get();
-        return $allProducts; 
+    public function showAllProducts(){
+        $allProducts=DB::table('products')->get();
+        return view('pages.products', compact('allProducts'));
     }
     
 }

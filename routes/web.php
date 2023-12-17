@@ -19,7 +19,7 @@ use App\Http\Controllers\DashboardController;
 //==Dashboard Routes==//
 Route::group(['prefix'=>'admin'], function(){
     Route::get('/home', [DashboardController::class, 'showHome'])->name('home');
-    Route::get('/products', [DashboardController::class, 'showAllProducts'])->name('product.list');
+    Route::get('/products', [ProductController::class, 'showAllProducts'])->name('product.list');
     Route::get('/products/add-product', [ProductController::class, 'addProducts'])->name('add-products.form');
     Route::POST('/products', [ProductController::class, 'storeProducts']);
     Route::get('/transactions', [DashboardController::class, 'showAllTransactions'])->name('transaction.list');

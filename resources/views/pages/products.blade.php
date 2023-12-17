@@ -23,14 +23,24 @@
                                         <tr>
                                             <th>Product ID</th>
                                             <th>Product's Name</th>
-                                            <th>Quantity (In Stock)</th>
+                                            <th>Quantity in Stock</th>
+                                            <th>Unit Price</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach($allProducts as $product)
                                         <tr>
-                                            <td>1</td>
-                                            <td>iPhone 6.0</td>
-                                            <td>123</td>
+                                            <td>{{$product->id}}</td>
+                                            <td>{{$product->product_title}}</td>
+                                            <td>{{$product->quantity}}</td>
+                                            <td>{{$product->price}}</td>
+                                        </tr>
+                                        @endforeach
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Total Items: </td>
+                                            <td></td>
                                         </tr>
                                     </tbody>
                                 </table>
